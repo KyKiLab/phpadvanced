@@ -4,20 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "002d6feed5d26a2f36c60c9227e70bb7",
+    "content-hash": "99e0fe3b1fc6fe4ff7923d65fd3f689d",
     "packages": [
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "7.3.0",
+            "name": "domains/mathmulti",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7008573787b430c1c1f650e3722d9bba59967628"
+                "url": "https://github.com/KyKiLab/mathmulti.git",
+                "reference": "d8d38b5d36bc9ca59f698415284f8541e64a3ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7008573787b430c1c1f650e3722d9bba59967628",
-                "reference": "7008573787b430c1c1f650e3722d9bba59967628",
+                "url": "https://api.github.com/repos/KyKiLab/mathmulti/zipball/d8d38b5d36bc9ca59f698415284f8541e64a3ecd",
+                "reference": "d8d38b5d36bc9ca59f698415284f8541e64a3ecd",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "7.4.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "domains\\mathmulti\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kykilab",
+                    "email": "kykilab@gmail.com"
+                }
+            ],
+            "description": "Test mathematical multiplication package",
+            "support": {
+                "issues": "https://github.com/KyKiLab/mathmulti/issues",
+                "source": "https://github.com/KyKiLab/mathmulti/tree/1.0.0"
+            },
+            "time": "2021-05-10T17:48:42+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "de6f1e58e735754b888649495ed4cb9ae3b19589"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/de6f1e58e735754b888649495ed4cb9ae3b19589",
+                "reference": "de6f1e58e735754b888649495ed4cb9ae3b19589",
                 "shasum": ""
             },
             "require": {
@@ -42,10 +82,11 @@
                 "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
@@ -87,7 +128,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.3.0"
+                "source": "https://github.com/guzzle/guzzle/tree/master"
             },
             "funding": [
                 {
@@ -107,7 +148,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-23T11:33:13+00:00"
+            "time": "2021-03-23T14:07:59+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -392,7 +433,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "guzzlehttp/guzzle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,5 +1,8 @@
 {
+    "name": "phpadvanced/learning",
+    "description": "Learning project",
     "require": {
-        "guzzlehttp/guzzle": "^7.3"
+        "guzzlehttp/guzzle": "7.4.x-dev",
+        "domains/mathmulti": "^1.0"
     }
 }
