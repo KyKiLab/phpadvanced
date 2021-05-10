@@ -1,5 +1,11 @@
 <?php
 
-echo "first lesson";
+use GuzzleHttp\Client;
 
-echo "new branch";
+include 'vendor/autoload.php';
+
+$client = new Client();
+
+$response = $client->request('GET', 'https://itea.ua');
+
+echo $response->getBody()->getContents();
